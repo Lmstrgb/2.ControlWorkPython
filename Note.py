@@ -111,29 +111,20 @@ def list_notes(data):
         print(note.last_modified_time)
         print()
 
-
-def main():
-    global data
-    data = load_notes()
-
-    while True:
-        action = input(
-            "Введите 'n' чтобы сделать новую заметку, 'r' чтобы прочитать, 'u' чтобы обновить, 'l' чтобы вывести список заметок, 'd' чтобы удалить,  'q' чтобы выйти: ")
-        if action == "n":
-            create_note(data)
-        elif action == "r":
-            read_note()
-        elif action == "u":
-            update_note()
-        elif action == "d":
-            delete_note(data)
-        elif action == "l":
-            list_notes(data)
-        elif action == "q":
-            break
-        else:
-            print("Неправильное действие")
-
-
-if __name__ == "__main__":
-    main()
+    # while True:
+    #     action = input(
+    #         "Введите 'n' чтобы сделать новую заметку, 'r' чтобы прочитать, 'u' чтобы обновить, 'l' чтобы вывести список заметок, 'd' чтобы удалить,  'q' чтобы выйти: ")
+    #     if action == "n":
+    #         create_note(data)
+    #     elif action == "r":
+    #         read_note()
+    #     elif action == "u":
+    #         update_note()
+    #     elif action == "d":
+    #         delete_note(data)
+    #     elif action == "l":
+    #         list_notes(data)
+    #     elif action == "q":
+    #         break
+    #     else:
+    #         print("Неправильное действие")
